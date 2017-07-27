@@ -12,7 +12,7 @@ var app = app || {};
     //       client side of our app, our new proxyGitHub function will be handling the token using our
 
     $.get('/github/user/repos')
-      .then(data => repos.all = data, err => console.error(err)) // es6 syntax arrow functions
+      .then(data => repos.all = data, err => console.error(err))
       .then(callback);
   };
 
